@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="radio" id="login" name="toggle" checked>
+        <input type="radio" id="signup" name="toggle">
+        <div class="btn-btn">
+            <label for="login" class="btn-login">로그인</label>
+            <label for="signup" class="btn-signup">회원가입</label>
+        </div>
+
+        <div class="form-box">
+            <div class="input-box">
+                <input type="text" id="id" name="id" placeholder="아이디">
+                <label for="id" class="id"></label>
+                <input type="password" id="pw" name="pw" placeholder="비밀번호">
+                <label for="pw" class="pw"></label>
+                <button type="submit" value="login">로그인</button>
+            </div>
+            <div class="input-box">
+                <input type="text" id="name" name="name" placeholder="이름">
+                <input type="text" id="new-id" name="new-id" placeholder="아이디">
+                <input type="password" id="new-pw" name="new-pw" placeholder="비밀번호">
+                <input type="email" id="email" name="email" placeholder="이메일">
+                <input type="text" id="phone" name="phone"placeholder="휴대폰">
+                <div class="hg">
+                    <h2>취미</h2>
+                    <label><input type="checkbox" value="coding" name="coding">코딩</label>
+                    <label><input type="checkbox" value="game" name="game">게임</label>
+                    <label><input type="checkbox" value="book" name="book">독서</label>
+                    <label><input type="checkbox" value="song" name="song">노래</label>
+                    <h2>성별</h2>
+                    <label><input type="radio" name="gender" value="male">남</label>
+                    <label><input type="radio" name="gender" value="female">여</label>
+                </div>
+                <button type="submit" value="signup">회원가입</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

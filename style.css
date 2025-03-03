@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+body {
+    background: linear-gradient(to right, #03071b, #020411);
+}
+.container {
+    width: 500px;
+    height: 700px;
+    margin-top: 10vh;
+    border : 1px solid #0e2179;
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 25px;
+    background: linear-gradient(to right, #03071a, #06103a);
+    transition: height 0.5s ease;
+}
+.btn-btn {
+    width: 75%;
+    height: 50px;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-login  {
+    width: 50%;
+    height: 75%;
+    background-color: #050e35;
+    box-shadow: 1px 1px 5px 2px #344077;
+    border-bottom-left-radius: 25px;
+    color: white;
+    border-top-left-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-login:hover {
+    opacity: 0.8;
+}
+.btn-signup {
+    width: 50%;
+    height: 75%;
+    background-color: #050e35;
+    box-shadow: 1px 1px 5px 2px #344077;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.btn-signup:hover {
+    opacity: 0.8;
+}
+label {
+    cursor: pointer;
+}
+
+input[type=radio]#login:checked ~ .btn-btn .btn-login {
+    color: black;
+    background-color: rgb(101, 103, 245);
+    transition: all ease 0.5s;
+}
+input[type=radio]#signup:checked ~  .btn-btn  .btn-signup {
+    color: black;
+    background-color: rgb(101, 103, 245);
+    transition: all ease 0.5s;
+}
+
+.container > input[type=radio] {
+    display: none;
+}
+
+input[type=radio]#login:checked ~ .form-box {
+    transform: translateX(0);
+}
+
+input[type=radio]#signup:checked ~ .form-box {
+    transform: translateX(-50%);
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #06103a;
+    border-left: 3px solid #24328b;
+    border-bottom: 3px solid #24328b;
+    border-top: none;
+    border-right: none;
+}
+
+input::-webkit-input-placeholder {
+    background: #06103a;
+    appearance: none;
+}
+input:focus , input:valid {
+    color: white;
+    top: 0;
+}
+input:invalid {
+    color: white;
+    border-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-transition: background-color 9999s ease-out;
+    -webkit-box-shadow: 0 0 0px 1000px #19278377 inset !important;
+    -webkit-text-fill-color: #fff !important;
+}
+
+.form-box {
+    width: 200%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.input-box {
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+button {
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    background-color: rgb(24, 191, 233);
+    border: none;
+    color: white;
+    border-radius: 25px;
+    font-size: 25px;
+}
+button:hover {
+    opacity: 0.8;
+}
+button:active {
+    position: relative;
+    top:2px;
+}
+
+.hg , h2 {
+    margin-top: 10px;
+    color: white;
+}
+.hg input {
+    margin-left: 5px;
+}
+
+
